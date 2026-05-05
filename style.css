@@ -295,3 +295,36 @@ td.small { font-size: 11px; }
 
 /* Data grid with top margin */
 .data-grid-mt { margin-top: 8px; }
+
+/* Data table — for comparison/reference tables */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0;
+  font-size: 14px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.data-table th {
+  background: var(--terra);
+  color: #fff;
+  padding: 10px 12px;
+  font-weight: 600;
+  text-align: left;
+}
+.data-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+  text-align: left;
+  color: var(--dark);
+}
+.data-table tbody tr:nth-child(even) { background: rgba(194,112,62,0.05); }
+.data-table tbody tr:hover { background: rgba(194,112,62,0.1); }
+.data-table tbody tr:last-child td { border-bottom: none; }
+@media (max-width: 600px) {
+  .data-table { font-size: 12px; }
+  .data-table th, .data-table td { padding: 6px 8px; }
+}
